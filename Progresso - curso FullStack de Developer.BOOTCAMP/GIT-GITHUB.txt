@@ -1,0 +1,32 @@
+ls - Listar arquivos
+cd - Entrar dentro de pasta
+cd .. - Sair da pasta
+mkdir - Criar pasta
+echo > - Criar arquivo
+
+git init - iniciar comando para depois mover arquivo para o github
+
+git config --global user.email
+git config --global user.name (configurar dados para importar repositório)
+
+git config --global --unset user.email
+git config --global --unset user.name (resetar usuario/email)
+
+git config --list - Verificar cadastro 
+
+git add * - "Salvar" alteração para enviar para o github
+
+git commit -m "" - "Salvar" modificação
+
+git remote add origin "colocar link do repositório"
+
+git remote -v - Verificar link de repositório cadastrado
+
+git push origin master(main) - enviar arquivo para repositório
+
+git pull origin master(main) - Puxar versão atualizada no github
+
+git clone (colcar http:/)
+
+mv "arquivo" ./pasta/ - para mover arquivo de pasta
+

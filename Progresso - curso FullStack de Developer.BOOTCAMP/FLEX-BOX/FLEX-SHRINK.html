@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Fundamentos - flex shrink</title>
+        <style>
+            .flex-container{
+                display: flex;
+                border: 1px solid black;
+                max-width: 550px;
+            }
+
+            .item{
+                background-color: blueviolet;
+                font-size: 24px;
+                text-align: center;
+                margin: 5px;
+            }
+            .fg-1{
+                flex-grow: 1;
+            }
+
+            .s-1{
+                flex-shrink: 1;
+            }
+
+            .s-0{
+                flex-shrink: 0;
+                flex-basis: 200px;
+            }
+            .s-1{
+                flex-shrink: 1;
+            }
+
+            .s-2{
+                flex-shrink: 2;
+                flex-basis: 100px;
+            }
+
+            .s-3{
+                flex-shrink: 3;
+                flex-basis: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <p>flex shrink- 1</p>
+        <div class="flex-container">
+            <div class="item fg-1 s-1">A</div>
+            <div class="item fg-1 s-1">B</div>
+            <div class="item fg-1 s-1">C</div>
+            <div class="item fg-1 s-1">D</div>
+            <div class="item fg-1 s-1">E</div>
+        </div>
+
+        <p>teste de texto</p>
+        <div class="flex-container">
+            <div class="item fg-1 s-1">A</div>
+            <div class="item fg-1 s-1"> wait for the lord. be strong, and let</div>
+            <div class="item fg-1 s-1">C</div>
+            <div class="item fg-1 s-1">D</div>
+        </div>
+
+        <p>flex shrink- 0/basis 100px</p>
+        <div class="flex-container">
+            <div class="item fg-1 s-0">A</div>
+            <div class="item fg-1 s-0">wait for the lord.</div>
+            <div class="item fg-1 s-0">wait for the lord.</div>
+            <div class="item fg-1 s-0">D</div>
+            <div class="item fg-1 s-0">E</div>
+        </div>
+
+            <p>flex shrink- MIX/basis 100px</p>
+        <div class="flex-container">
+            <div class="item fg-1 s-1">A</div>
+            <div class="item fg-1 s-1">B</div>
+            <div class="item fg-1 s-2">wait for the lord.</div>
+            <div class="item fg-1 s-2">D</div>
+            <div class="item fg-1 s-3">E</div>
+        </div>
+    
+    </body>
+</html>

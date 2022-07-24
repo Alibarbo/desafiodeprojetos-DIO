@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Fundamentos - align content</title>
+        <style>
+            .container{
+                height: 450px;
+                max-width: 300px;
+                margin: 0 auto;
+                display: flex;
+                flex-wrap: wrap;
+                border: 1px solid black;
+            }
+            
+            .item{
+                background-color: blueviolet;
+                padding: 0 5px;
+                margin: 5px;
+                flex: 1;
+                text-align: center;
+                color: white;
+                border: 2px solid black;
+            }
+            .stretch{
+                align-content: stretch;
+            }
+
+            .center{
+                align-content: center;
+            }
+
+            .flex-start{
+                align-content: flex-start;
+            }
+
+            .flex-end{
+                align-content: flex-end;
+            }
+
+            .space-between{
+                align-content: space-between;
+            }
+
+            .space-around{
+                align-content: space-around;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <p>stretch</p>
+        <div class="container stretch">
+            <div class="item">Wait for the lord.Be strong.</div>
+            <div class="item">Wait for the lord.</div>
+            <div class="item">Wait for the lord.Be strong, and let your heart.</div>
+            <div class="item">Wait for the lord.Be strong, and let your heart be courageous.</div>
+            <div class="item">Wait for the lord.</div>
+            <div class="item">Wait for the lord.</div>
+            <div class="item">Wait for the lord.</div>
+        </div>
+
+        <p>center</p>
+        <div class="container center">
+            <div class="item">Wait for the lord.Be strong.</div>
+            <div class="item">Wait for the lord.</div>
+            <div class="item">Wait for the lord.Be strong, and let your heart.</div>
+            <div class="item">Wait for the lord.Be strong, and let your heart be courageous.</div>
+            <div class="item">Wait for the lord.</div>
+            <div class="item">Wait for the lord.</div>
+            <div class="item">Wait for the lord.</div>
+        </div>
+
+        <p>flex-start</p>
+        <div class="container flex-start">
+            <div class="item">Wait for the lord.Be strong.</div>
+            <div class="item">Wait for the lord.</div>
+            <div class="item">Wait for the lord.Be strong, and let your heart.</div>
+            <div class="item">Wait for the lord.Be strong, and let your heart be courageous.</div>
+            <div class="item">Wait for the lord.</div>
+            <div class="item">Wait for the lord.</div>
+            <div class="item">Wait for the lord.</div>
+        </div>
+        
+        <p>flex-end</p>
+        <div class="container flex-end">
+            <div class="item">Wait for the lord.Be strong.</div>
+            <div class="item">Wait for the lord.</div>
+            <div class="item">Wait for the lord.Be strong, and let your heart.</div>
+            <div class="item">Wait for the lord.Be strong, and let your heart be courageous.</div>
+            <div class="item">Wait for the lord.</div>
+            <div class="item">Wait for the lord.</div>
+            <div class="item">Wait for the lord.</div>
+        </div>
+
+        <p>space-between</p>
+        <div class="container space-between">
+            <div class="item">Wait for the lord.Be strong.</div>
+            <div class="item">Wait for the lord.</div>
+            <div class="item">Wait for the lord.Be strong, and let your heart.</div>
+            <div class="item">Wait for the lord.Be strong, and let your heart be courageous.</div>
+            <div class="item">Wait for the lord.</div>
+            <div class="item">Wait for the lord.</div>
+            <div class="item">Wait for the lord.</div>
+        </div>
+
+        <p>space-around</p>
+        <div class="container space-around">
+            <div class="item">Wait for the lord.Be strong.</div>
+            <div class="item">Wait for the lord.</div>
+            <div class="item">Wait for the lord.Be strong, and let your heart.</div>
+            <div class="item">Wait for the lord.Be strong, and let your heart be courageous.</div>
+            <div class="item">Wait for the lord.</div>
+            <div class="item">Wait for the lord.</div>
+            <div class="item">Wait for the lord.</div>
+        </div>
+    
+    </body>
+</html>
